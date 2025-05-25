@@ -17,7 +17,7 @@ import factory.animals.sky.Pterodactylus;
 import java.util.List;
 
 // Similar imports as Cenozoic
-public abstract class JurassicAnimalFactory implements AnimalAbstractFactory {
+public class JurassicAnimalFactory implements AnimalAbstractFactory {
     @Override
     public String getEra() { return "Jurassic"; }
 
