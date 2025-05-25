@@ -19,6 +19,6 @@ public class CaveLion implements LandAnimal {
 
     @Override
     public String getWalking() {
-        return "prowling";
+        return "walking";
     }
 }

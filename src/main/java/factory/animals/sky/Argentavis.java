@@ -19,6 +19,6 @@ public class Argentavis implements SkyAnimal {
 
     @Override
     public String getFlying() {
-        return "soaring";
+        return "flapping";
     }
 }

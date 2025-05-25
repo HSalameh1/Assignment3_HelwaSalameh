@@ -19,6 +19,6 @@ public class WoollyRhino implements LandAnimal {
 
     @Override
     public String getWalking() {
-        return "charging";
+        return "running";
     }
 }

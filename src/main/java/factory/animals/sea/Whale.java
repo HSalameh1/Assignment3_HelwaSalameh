@@ -14,11 +14,11 @@ import factory.animals.SeaAnimal;
 public class Whale implements SeaAnimal {
     @Override
     public String getName() {
-        return "Ancient whale";
+        return "Whale";
     }
 
     @Override
     public String getSwimming() {
-        return "breaching";
+        return "swimming";
     }
 }
