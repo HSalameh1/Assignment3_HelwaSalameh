@@ -4,8 +4,10 @@
 // For SE350 Section 630 – Spring 2025
 //--------------------------------------------------------
 
+package Singleton;
+
 /**
- * LazySingleton implementation that creates instances only when requested
+ * Singleton.LazySingleton implementation that creates instances only when requested
  */
 public class LazySingleton {
     private static final LazySingleton[] instances = new LazySingleton[3];
@@ -14,13 +16,13 @@ public class LazySingleton {
     // Private constructor
     private LazySingleton(int id) {
         this.id = id;
-        System.out.println("LazySingleton " + id + " instantiated");
+        System.out.println("Singleton.LazySingleton " + id + " instantiated");
     }
 
     /**
      * Returns the singleton instance for the specified index, creating it if necessary
      * @param id the index of the instance to retrieve (0-2)
-     * @return the LazySingleton instance
+     * @return the Singleton.LazySingleton instance
      */
     public static synchronized LazySingleton getInstance(int id) {
         if (id < 0 || id >= 3) {

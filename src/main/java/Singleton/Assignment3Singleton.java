@@ -3,8 +3,9 @@
 // Written by: Helwa Salameh (1961163)
 // For SE350 Section 630 – Spring 2025
 //--------------------------------------------------------
-
+package Singleton;
 import java.util.Random;
+
 public class Assignment3Singleton {
     public static void main(String[] args) {
         Random r = new Random();

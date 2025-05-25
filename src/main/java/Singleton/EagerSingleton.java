@@ -3,6 +3,7 @@
 // Written by: Helwa Salameh (1961163)
 // For SE350 Section 630 – Spring 2025
 //--------------------------------------------------------
+package Singleton;
 
 public class EagerSingleton {
     private static final EagerSingleton[] instances = new EagerSingleton[3];
@@ -12,7 +13,7 @@ public class EagerSingleton {
     static {
         for (int i = 0; i < 3; i++) {
             instances[i] = new EagerSingleton(i);
-            System.out.println("EagerSingleton " + i + " instantiated");
+            System.out.println("Singleton.EagerSingleton " + i + " instantiated");
         }
     }
 
@@ -24,7 +25,7 @@ public class EagerSingleton {
     /**
      * Returns the singleton instance for the specified index
      * @param id the index of the instance to retrieve (0-2)
-     * @return the EagerSingleton instance
+     * @return the Singleton.EagerSingleton instance
      * @throws IllegalArgumentException if id is not between 0-2
      */
     public static EagerSingleton getInstance(int id) {
